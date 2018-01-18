@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to right, #495FAA, #28BCD6);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+    text-align: justify;
+}
+
+h1 {
+    text-shadow: -2px 0 black;
+    text-align: center;
+}
+
+.align-left {
+    float:left;
+    margin-right:20px;
+}
+.align-right {
+    float:right;
+    margin-left:20px;
+}
+
+.slide-in {
+    opacity:0;
+    transition: all 0.5s;
+}
+
+img.align-left {
+    transform: translateX(-50%) scale(0.5);
+}
+
+img.align-right {
+    transform: translateX(50%) scale(0.5);
+}
+
+img.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
